@@ -23,49 +23,52 @@ namespace RestFulMoviesAPI.Controllers
         [HttpGet]
         [HttpGet("list")] //can have multiple requests assigned to same action
         [HttpGet("/allgenres")] //overwrite the controller route with action specific route.
-        public List<Genre> GetGenres()
+        public ActionResult<List<Genre>> GetGenres()
         {
+            //Replace the return value types with ActionResult<T> or IActionResult to handle consistent result types in place of user defined types.
             return repository.GetAllGenres();
         }
 
         [HttpGet("getgenre")] //can have a action specific routing rule to differentiate from similar action. this becomes : api/genres/getgenre
-        public Genre GetGenreById(int Id)
+        public IActionResult GetGenreById(int Id)
         {
             //but here the action is being called, but the parameters are invalid
             var genre = repository.GetGenreById(Id);
             if (genre == null)
             {
-                //return NotFound(); 
+                return NotFound(); 
             }
-            return genre;
+            return Ok(genre);
         }
 
         [HttpGet("{Id:int}/{param2=default}")] //with params. also we implement Routing constraint with data type.
-        public Genre GetGenreByParams(int Id, string param2)
+        public ActionResult<Genre> GetGenreByParams(int Id, string param2)
         {
+            //Most likely we will be using ActionResult<Tvalue> as this supports backward compatibility
             var genre = repository.GetGenreById(Id);
             if (genre == null)
             {
-                //return NotFound(); 
+                return NotFound(); 
             }
             return genre;
         }
 
         [HttpPost]
-        public void PostGenres()
+        public IActionResult PostGenres()
         {
+            return NoContent();
         }
 
         [HttpPut]
-        public void PutGenres()
+        public IActionResult PutGenres()
         {
-
+            return NoContent();
         }
 
         [HttpDelete]
-        public void DeleteGenres()
+        public IActionResult DeleteGenres()
         {
-
+            return NoContent();
         }
     }
 }
