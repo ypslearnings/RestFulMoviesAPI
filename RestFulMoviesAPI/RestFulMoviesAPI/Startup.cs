@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using RestFulMoviesAPI.Services;
+using Microsoft.OpenApi.Models;
 
 namespace RestFulMoviesAPI
 {
@@ -28,6 +29,12 @@ namespace RestFulMoviesAPI
         {
             services.AddControllers();
             services.AddSingleton<IRepository, InMemoryRepository>();
+
+            // Register the Swagger generator, defining 1 or more Swagger documents
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "RestFulMoviesAPI", Version = "v1" });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,6 +46,18 @@ namespace RestFulMoviesAPI
             }
 
             app.UseHttpsRedirection();
+
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger();
+
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "RestFulMoviesAPI V1");
+                //To serve the Swagger UI at the app's root (http://localhost:<port>/), set the RoutePrefix property to an empty string:
+                c.RoutePrefix = string.Empty;
+            });
 
             app.UseRouting();
 
