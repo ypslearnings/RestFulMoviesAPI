@@ -6,12 +6,13 @@
 /Users/praveenyellamaraju/Desktop/Documents/trainings/webAPI/projects/RestFulMoviesAPI/RestFulMoviesAPI/RestFulMoviesAPI/bin/Debug/netcoreapp3.1/RestFulMoviesAPI.runtimeconfig.dev.json
 /Users/praveenyellamaraju/Desktop/Documents/trainings/webAPI/projects/RestFulMoviesAPI/RestFulMoviesAPI/RestFulMoviesAPI/bin/Debug/netcoreapp3.1/RestFulMoviesAPI.dll
 /Users/praveenyellamaraju/Desktop/Documents/trainings/webAPI/projects/RestFulMoviesAPI/RestFulMoviesAPI/RestFulMoviesAPI/bin/Debug/netcoreapp3.1/RestFulMoviesAPI.pdb
-/Users/praveenyellamaraju/Desktop/Documents/trainings/webAPI/projects/RestFulMoviesAPI/RestFulMoviesAPI/RestFulMoviesAPI/obj/Debug/netcoreapp3.1/RestFulMoviesAPI.csprojAssemblyReference.cache
+/Users/praveenyellamaraju/Desktop/Documents/trainings/webAPI/projects/RestFulMoviesAPI/RestFulMoviesAPI/RestFulMoviesAPI/bin/Debug/netcoreapp3.1/Microsoft.OpenApi.dll
 /Users/praveenyellamaraju/Desktop/Documents/trainings/webAPI/projects/RestFulMoviesAPI/RestFulMoviesAPI/RestFulMoviesAPI/obj/Debug/netcoreapp3.1/RestFulMoviesAPI.csproj.CoreCompileInputs.cache
 /Users/praveenyellamaraju/Desktop/Documents/trainings/webAPI/projects/RestFulMoviesAPI/RestFulMoviesAPI/RestFulMoviesAPI/obj/Debug/netcoreapp3.1/RestFulMoviesAPI.MvcApplicationPartsAssemblyInfo.cache
 /Users/praveenyellamaraju/Desktop/Documents/trainings/webAPI/projects/RestFulMoviesAPI/RestFulMoviesAPI/RestFulMoviesAPI/obj/Debug/netcoreapp3.1/RestFulMoviesAPI.AssemblyInfoInputs.cache
 /Users/praveenyellamaraju/Desktop/Documents/trainings/webAPI/projects/RestFulMoviesAPI/RestFulMoviesAPI/RestFulMoviesAPI/obj/Debug/netcoreapp3.1/RestFulMoviesAPI.AssemblyInfo.cs
 /Users/praveenyellamaraju/Desktop/Documents/trainings/webAPI/projects/RestFulMoviesAPI/RestFulMoviesAPI/RestFulMoviesAPI/obj/Debug/netcoreapp3.1/RestFulMoviesAPI.RazorTargetAssemblyInfo.cache
+/Users/praveenyellamaraju/Desktop/Documents/trainings/webAPI/projects/RestFulMoviesAPI/RestFulMoviesAPI/RestFulMoviesAPI/obj/Debug/netcoreapp3.1/RestFulMoviesAPI.csproj.CopyComplete
 /Users/praveenyellamaraju/Desktop/Documents/trainings/webAPI/projects/RestFulMoviesAPI/RestFulMoviesAPI/RestFulMoviesAPI/obj/Debug/netcoreapp3.1/staticwebassets/RestFulMoviesAPI.StaticWebAssets.Manifest.cache
 /Users/praveenyellamaraju/Desktop/Documents/trainings/webAPI/projects/RestFulMoviesAPI/RestFulMoviesAPI/RestFulMoviesAPI/obj/Debug/netcoreapp3.1/staticwebassets/RestFulMoviesAPI.StaticWebAssets.xml
 /Users/praveenyellamaraju/Desktop/Documents/trainings/webAPI/projects/RestFulMoviesAPI/RestFulMoviesAPI/RestFulMoviesAPI/obj/Debug/netcoreapp3.1/RestFulMoviesAPI.dll
