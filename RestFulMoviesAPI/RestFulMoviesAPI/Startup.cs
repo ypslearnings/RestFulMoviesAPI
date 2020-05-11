@@ -12,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using RestFulMoviesAPI.Services;
 using Microsoft.OpenApi.Models;
+using RestFulMoviesAPI.Filters;
 
 namespace RestFulMoviesAPI
 {
@@ -27,8 +28,19 @@ namespace RestFulMoviesAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
-            services.AddSingleton<IRepository, InMemoryRepository>();
+            /*services.AddControllers(options =>
+            {
+                options.Filters.Add(typeof(MyExceptionFilter));
+            });*/
+            //To generate XML response:
+            services.AddControllers(options =>
+            {
+                options.Filters.Add(typeof(MyExceptionFilter));
+            }).AddXmlDataContractSerializerFormatters();
+            services.AddScoped<IRepository, InMemoryRepository>();
+            services.AddResponseCaching();
+            //services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
+            services.AddTransient<MyActionFilter>();
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
@@ -60,6 +72,10 @@ namespace RestFulMoviesAPI
             });
 
             app.UseRouting();
+
+            app.UseResponseCaching();
+
+            //app.UseAuthentication();
 
             app.UseAuthorization();
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using RestFulMoviesAPI.Entities;
 
 namespace RestFulMoviesAPI.Services
@@ -21,15 +22,26 @@ namespace RestFulMoviesAPI.Services
                 new Genre(){ Id = 5, Name = "SciFi" },
             };
         }
-
-        public List<Genre> GetAllGenres()
+        /*
+         * Async programming
+         *
+         * return async along with Task to define the implementation will happen in future
+         */
+        public async Task<List<Genre>> GetAllGenres()
         {
+            await Task.Delay(1);//delaying response
             return _genres;
         }
 
         public Genre GetGenreById(int Id)
         {
             return _genres.FirstOrDefault(x => x.Id == Id);
+        }
+
+        public void AddGenre(Genre genre)
+        {
+            genre.Id = _genres.Max(x => x.Id) + 1;
+            _genres.Add(genre);
         }
     }
 }

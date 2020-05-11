@@ -1,25 +1,31 @@
 ﻿<Properties StartupConfiguration="{CF5591B4-67EA-4CED-88C2-A925C56F2FCD}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
   <MonoDevelop.Ide.ItemProperties.RestFulMoviesAPI PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="RestFulMoviesAPI/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="RestFulMoviesAPI/Controllers/GenresController.cs">
     <Files>
-      <File FileName="RestFulMoviesAPI/Entities/Genre.cs" Line="14" Column="1" />
-      <File FileName="RestFulMoviesAPI/Services/IRepository.cs" Line="7" Column="22" />
-      <File FileName="RestFulMoviesAPI/Controllers/GenreController.cs" Line="56" Column="18" />
-      <File FileName="RestFulMoviesAPI/Services/InMemoryRepository.cs" Line="27" Column="28" />
-      <File FileName="RestFulMoviesAPI/Startup.cs" Line="14" Column="32" />
+      <File FileName="RestFulMoviesAPI/Entities/Genre.cs" Line="26" Column="1" />
+      <File FileName="RestFulMoviesAPI/Services/IRepository.cs" />
+      <File FileName="RestFulMoviesAPI/Services/InMemoryRepository.cs" />
+      <File FileName="RestFulMoviesAPI/Startup.cs" />
+      <File FileName="RestFulMoviesAPI/Controllers/GenresController.cs" Line="75" Column="14" />
+      <File FileName="RestFulMoviesAPI/Program.cs" />
+      <File FileName="RestFulMoviesAPI/Filters/MyActionFilter.cs" />
+      <File FileName="RestFulMoviesAPI/Filters/MyExceptionFilter.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RestFulMoviesAPI" expanded="True">
             <Node name="RestFulMoviesAPI" expanded="True">
-              <Node name="Startup.cs" selected="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="GenresController.cs" selected="True" />
+              </Node>
+              <Node name="Entities" expanded="True" />
+              <Node name="Filters" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="Validations" expanded="True" />
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
